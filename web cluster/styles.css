@@ -1,0 +1,28 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('C:\Users\keert\OneDrive\Documents\web cluster\images\bg (2).svg');
+    background-size: cover;
+    
+} */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('C:\Users\keert\OneDrive\Documents\web cluster\images\bg (2).svg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Set text color to contrast with the background */
+    font-size: 24px; /* Adjust text size as needed */
+}
+
+.overlay-text {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay for better text readability */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners to the overlay */
+}
+
