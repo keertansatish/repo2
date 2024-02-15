@@ -7,8 +7,7 @@ Welcome to the NFT Showcase Website! This dynamic platform serves as a captivati
 - [How to Use](#how-to-use)
 - [Cloning the Repository](#cloning-the-repository)
 - [Viewing the Website](#viewing-the-website)
-- [Making Changes](#making-changes)
-- [License](#license)
+- [website description](#website-description)
 
 ## Introduction
 
@@ -20,7 +19,7 @@ Explore the NFT Showcase Website effortlessly with the following steps:
 
 ## Cloning the Repository
 
-1. Copy the repository URL from [GitHub](<>).
+1. Copy the repository URL from [GitHub](<https://github.com/keertansatish/repo2.git>).
 2. Open a terminal on your computer.
 3. Navigate to the directory where you want to clone the project.
 4. Run the following command:
@@ -48,26 +47,11 @@ Explore the NFT Showcase Website effortlessly with the following steps:
     ```
 
    Replace `index.html` with the actual name of your main HTML file.
+## website description
+1.index.html---home for the website 
+2.collections.html --display the vairous collections availablle
+3.about.html--about
+4.creators.html--display the top creators
+5.navigation bar on the top lets  you to easily navigate
+   
 
-3. The website should now open in your default web browser, displaying the NFT images and content.
-
-## Making Changes
-
-For those looking to contribute and make enhancements:
-
-1. Edit the HTML and CSS files using a text editor.
-2. Commit the changes:
-
-    ```bash
-    git add .
-    git commit -m "Description of changes made"
-    git push origin main
-    ```
-
-   Replace `"Description of changes made"` with a brief description of the changes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE), providing you with the freedom to use, modify, and distribute the code.
-
-Feel free to explore, contribute, and showcase your own NFTs on this website!
