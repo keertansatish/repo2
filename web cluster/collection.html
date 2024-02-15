@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Background with Navigation Bars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white; /* Text color on the background */
+            margin: 0; /* Remove default margin */
+            background-image: url('images/bg.svg'); /* Adjust the path to your background image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the content horizontally */
+            justify-content: flex-start; /* Start content from the top */
+            height: 100vh; /* Set the height of the body to 100% of the viewport height */
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 15px;
+            background-color: rgba(73, 68, 68, 0.5); 
+            font-weight: bold; 
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff; /* Text color for navigation links */
+            margin: 0 15px;
+            font-size: 40px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 50px; /* Adjusted margin for better spacing */
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 20px; /* Adjusted margin for better spacing */
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 30px;
+            margin-bottom: 20px; /* Adjusted margin for better spacing */
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 60%; /* Adjusted width of the container */
+            margin-top: 20px; /* Margin above the image container */
+        }
+
+        .image-container img {
+            width: calc(30% - 20px); /* Calculate 25% width with some spacing */
+            margin: 0 10px 20px 10px; /* Add margin for spacing between and below images */
+            box-sizing: border-box; /* Include padding and border in the width and height of the elements */
+            background-color: none; /* Set a background color for better visibility */
+            padding: 10px; /* Add padding for better visual appearance */
+            border-radius: 20px; /* Add border-radius to curve the borders */
+            border: 3px solid rgb(108, 51, 7); /* Add a white border to the images */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-bar"> 
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="creators.html">CREATOR</a>
+            <a href="#">ROAD MAP</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Top Collections</h1>
+        <p>The Largest And Unique Super Rare NFT Marketplace</p>
+    </header>
+
+    <div class="image-container">
+        <img src="collections\Ellipse 130.png" alt="Image 1">
+        <img src="collections\Ellipse 132.png" alt="Image 2">
+        <img src="collections\Frame 1261152802-1.png" alt="Image 3">
+        <img src="collections\Frame 1261152802.png" alt="Image 4">
+        <img src="collections\Frame 1261152802-2.png" alt="Image 5">
+    </div>
+</body>
+</html>
