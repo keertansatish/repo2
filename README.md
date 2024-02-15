@@ -25,10 +25,8 @@ Explore the NFT Showcase Website effortlessly with the following steps:
 4. Run the following command:
 
     ```bash
-    git clone <your_repository_url>
+    git clone <https://github.com/keertansatish/repo2.gitl>>
     ```
-
-   Replace `<https://github.com/keertansatish/repo2.gitl>` with the actual URL of your GitHub repository.
 
 ## Viewing the Website
 
