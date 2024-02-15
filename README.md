@@ -48,10 +48,10 @@ Explore the NFT Showcase Website effortlessly with the following steps:
 
    Replace `index.html` with the actual name of your main HTML file.
 ## website description
-1.index.html---home for the website 
-2.collections.html --display the vairous collections availablle
-3.about.html--about
-4.creators.html--display the top creators
-5.navigation bar on the top lets  you to easily navigate
+1. index.html---home for the website 
+2. collections.html --display the vairous collections availablle
+3. about.html--about
+4. creators.html--display the top creators
+5. navigation bar on the top lets  you to easily navigate
    
 
