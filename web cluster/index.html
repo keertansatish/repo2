@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Background with Navigation Bars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('images/bg.svg');
+            background-size: cover;
+            background-position: center;
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh;
+        }
+        .nav-bar{
+            padding:0px;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: rgba(73, 68, 68, 0.5); 
+            font-weight: bold; 
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff; 
+            margin: 0 15px;
+            font-size: 15px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px; 
+            padding: 20px;
+            width: 80%; /* Adjusted width for larger screens */
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px; 
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .full {
+            display: flex;
+            flex-direction: row; /* Adjusted to column for smaller screens */
+            width: 100%;
+        }
+
+        .left{
+            flex:2;
+        }
+        .right {
+            flex:1; /* Adjusted width for smaller screens */
+        }
+
+        .tiger {
+            text-align: center; /* Center the tiger image for smaller screens */
+            margin-top: 20px; /* Add some space between content and image */
+            margin-right: 20px;
+        }
+
+        .tiger img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        .buttons {
+            margin: 10px; /* Add some space between content and buttons */
+            display: flex;
+            /* flex-direction: column; Adjusted to column for smaller screens */
+            align-items: center; /* Center buttons for smaller screens */
+            justify-content: center;
+            color: peachpuff;
+            padding: 10px;
+            width: 100%;
+        }
+
+        button {
+            margin: 10px; /* Add some space between buttons for smaller screens */
+            padding: 5px 15px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        @media only screen and (min-width: 600px) and (max-width: 900px){
+           
+            nav {
+               
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            font-weight: bold; 
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff; 
+            margin: 0 5px;
+            font-size: 15px;
+        }
+            .full {
+                flex-direction: row;
+            }
+
+            .left {
+                flex: 1;
+            }
+
+            .right {
+                flex: 1;
+            }
+
+            .tiger {
+                text-align: right;
+                margin-top: 0; /* Reset margin-top for larger screens */
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            font-weight: bold; 
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+        header {
+            top:10px;
+            left:20px;
+            text-align: center;
+            /* align-items: center; */
+
+            margin-bottom: 10px; 
+            padding: 10px;
+            width: 100%; /* Adjusted width for larger screens */
+            box-sizing: border-box;
+        }
+        h1 {margin-left: 10px;
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 5px; 
+        }
+        nav a {
+            text-decoration: none;
+            color: #ffffff; 
+            margin: 0 5px;
+            font-size: 12px;
+        }
+            .nav-bar {
+                justify-content: center;
+            }
+
+            .full {
+                flex-direction: column;
+                align-items: center;
+            }
+            .left{
+                align-items: center;
+                justify-content: center;
+            }
+            .tiger {
+                order: 2; /* Move the tiger to the bottom for smaller screens */
+                margin:5%;
+              /* /  margin-right: 5%; */
+                margin-top: 0; /* Reset margin-top */
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-bar"> 
+            <a href="about.html">ABOUT</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="creators.html">CREATOR</a>
+            <a href="#">ROAD MAP</a>
+        </div>
+    </nav>
+    <div class="full">
+    <div class="left">
+        <header>
+            <h1>We Have High Quality </h1>
+            <h1>Nft Collections</h1>
+            <p>Additional information or description can go here.</p>
+            <div class="buttons" >
+                <button onclick="addToWishList()">Wish List</button>
+                <button onclick="contactUs()">Contact Us</button>
+            </div>
+        </header>
+        
+        
+    </div>
+
+    <div class="right"> <!-- Container for tiger and buttons -->
+        <div class="tiger"> 
+            <img src="images/tiger_hero.svg" alt="Description of the image">
+        </div>
+    </div>
+
+</div>
+    <script>
+        function addToWishList() {
+            alert('Added to Wish List!');
+        }
+
+        function contactUs() {
+            alert('Contact Us button clicked!');
+        }
+    </script>
+
+</body>
+</html>
