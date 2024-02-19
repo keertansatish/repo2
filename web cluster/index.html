@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Background with Navigation Bars</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('images/bg.svg');
+            background-size: cover;
+            background-position: center;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh;
+        }
+        .nav-bar {
+            padding: 0px;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            background-color: rgba(73, 68, 68, 0.5); 
+            font-weight: bold; 
+            width: 100%;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff; 
+            margin: 0 15px;
+            font-size: 15px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px; 
+            padding: 20px;
+            width: 80%; 
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px; 
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .full {
+            display: flex;
+            flex-direction: row; 
+            width: 90%;
+            /* margin-left: 60px; */
+        }
+
+        .left {
+            flex: 2; 
+            margin-left:40px;  
+        }
+
+        .right {
+            flex: 1.5; 
+        }
+
+        .middle {
+            flex: 1; 
+            text-align: center;
+            margin-top: 20px;
+            margin-right:10px; 
+        }
+        
+        .tiger {
+            text-align: left;
+            margin-top: 20px; 
+            margin-right: 20px; 
+        }
+
+        .tiger img {
+            max-width: 60%;
+            height: auto;
+        }
+
+        .filled-star{
+            max-width: 50px;
+            height: auto;
+            /* margin-left: 10px; */
+            position:absolute;
+            top:25%;
+            right:1pxx;
+
+        }
+        .orange-text {
+            color: rgb(173, 128, 11);
+        }
+        .boldd{
+            font-weight:bold;
+            font-size:20px
+        }
+
+
+        .buttons {
+            margin: 10px; 
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            color: peachpuff;
+            padding: 10px;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .wish-list, .contact {
+            margin: 10px;
+            padding: 10px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .wish-list {
+            background-color: #d76f06;
+            color: white;
+            border: 1px solid #ffffff;
+        }
+
+        .contact {
+            background-color: transparent;
+            color: white;
+            border: 1px solid #ffffff;
+        }
+        .box{
+            display:flex;
+            background-color: rgba(71, 59, 59, 0.244);
+            border-radius:25px;
+            font-weight: bold;
+            align-items: center;
+            margin: 20px;
+            padding: 15px;
+            
+        }
+        .box div {
+           margin: 0 20px; 
+           text-align: center;
+        } 
+        
+        @media only screen and (min-width: 600px) and (max-width: 900px) {
+            nav {
+                display: flex;
+                justify-content: flex-end;
+                padding: 5px;
+                background-color: rgba(0, 0, 0, 0.5); 
+                font-weight: bold; 
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff; 
+                margin: 0 5px;
+                font-size: 15px;
+            }
+
+            .full {
+                flex-direction: row;
+            }
+
+            .left {
+                flex: 1;
+            }
+
+            .right {
+                flex: 1;
+            }
+
+            .tiger {
+                text-align: right;
+                margin-top: 0; 
+            }
+
+            .middle {
+                text-align: right;
+                margin-top: 0;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                display: flex;
+                justify-content: flex-end;
+                padding: 5px;
+                background-color: rgba(0, 0, 0, 0.5); 
+                font-weight: bold; 
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+            
+            header {
+                top: 10px;
+                left: 20px;
+                text-align: center;
+                margin-bottom: 10px; 
+                padding: 10px;
+                width: 100%; 
+                box-sizing: border-box;
+            }
+
+            h1 {
+                margin-left: 10px;
+                text-align: center;
+                font-size: 30px;
+                margin-bottom: 5px; 
+            }
+            .filled-star {
+                max-width: 50px;
+                height: auto;
+                position: relative;
+                top: 50%; 
+                left: 20px; 
+    }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff; 
+                margin: 0 5px;
+                font-size: 12px;
+            }
+
+            .nav-bar {
+                justify-content: center;
+            }
+
+            .full {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left, .right, .middle {
+                flex: 1;
+            }
+
+            .tiger {
+                text-align: right;
+                margin-top: 50px;
+                margin-right: 5px; 
+            }
+            .tiger img{
+                max-width:50% ;
+            }
+
+            .middle {
+                margin-top: 20px;
+                order:1;
+            }
+
+            .buttons {
+                margin: 10px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+                color: peachpuff;
+                padding: 10px;
+                width: 100%;
+            }
+            .right {
+                order: 0; 
+            }
+            .middle{
+                order: 1;
+            }
+
+            .left {
+                order: 2; 
+    }
+
+            .tiger {
+                margin-right: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-bar"> 
+            <a href="about.html">ABOUT</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="creators.html">CREATOR</a>
+            <a href="#">ROAD MAP</a>
+        </div>
+    </nav>
+    <div class="full">
+        <div class="left">
+            <header>
+                <h1>We Have High </h1>
+                <h1> Quality <span class="orange-text">NFT</span> <img class="filled-star" src="images\filled_star.svg" alt="Filled Star"> </h1>
+                <h1>Collections</h1>
+                <p>Welcome to tiger NFTs, where the untamed spirit of tigers converges with cutting-edge blockchain technology. 
+                    Our Tiger NFT collection is a sanctuary of exclusive digital art, 
+                    capturing the essence of these majestic creatures in every pixel</p>
+                <div class="buttons" >
+                    <button class=" get wish-list" onclick="addToWishList()">White list</button>
+                    <button class="contact" onclick="contactUs()">Contact Us</button>
+                </div>
+                <div class="box">
+                <div>
+                    <p><span class="boldd">240k+</span> Total Sales</p>
+                       
+                </div>
+                <div>
+                    <p><span class="boldd">100k+</span> Auctions</p>
+
+                </div>
+                <div>
+                    <p><span class="boldd">240k+</span> Artist</p>
+
+                </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- <div class="middle">
+            <img class="filled-star" src="images\filled_star.svg" alt="Filled Star">
+        </div> -->
+        
+
+        <div class="right">
+            <div class="tiger"> 
+                <img src="images/tiger_hero.svg" alt="Tiger Image">
+            </div>
+            <img class="star11" src="images\star.svg" alt="Star">
+        </div>
+    </div>
+    <script>
+        function addToWishList() {
+            alert('Added to Wish List!');
+        }
+
+        function contactUs() {
+            alert('Contact Us button clicked!');
+        }
+    </script>
+</body>
+</html>
